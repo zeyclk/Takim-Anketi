@@ -1,0 +1,43 @@
+﻿<Window x:Class="SampiyonTakim.Sonuc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sonuc" Height="300" Width="300" Loaded="Window_Loaded_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Background="Yellow" Grid.Row="0" Text="Anket Sonuçları" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Margin="10" />
+        
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                <TextBlock Text="Galatasaray:" Width="80" TextDecorations="Underline" />
+                <Rectangle Name="r1" Width="100" Fill="Red"/>
+                <TextBlock Name="txtr1"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                <TextBlock Text="Fenerbahçe:" Width="80" TextDecorations="Underline"/>
+                <Rectangle Name="r2" Width="100" Fill="DarkBlue"/>
+                <TextBlock Name="txtr2"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                <TextBlock Text="Beşiktaş" Width="80" TextDecorations="Underline"/>
+                <Rectangle Name="r3" Width="100" Fill="Black"/>
+                <TextBlock Name="txtr3"/>
+            </StackPanel>
+                
+            <StackPanel Orientation="Horizontal">
+                 <TextBlock Text="Diğer:" Width="80" TextDecorations="Underline"/>
+                 <Rectangle Name="r4" Width="100" Fill="Chartreuse"/>
+                 <TextBlock Name="txtr4"/>
+            </StackPanel>
+                 
+            </StackPanel>
+    
+        <Button Content="Kapat" Grid.Row="2" Width="75" Height="30"/>
+    </Grid>
+</Window>
